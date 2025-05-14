@@ -1,0 +1,13 @@
+[package]
+name = "nova-psm-jup"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+jupiter-amm-interface = "=0.5.0"
+nova-psm ={ version = "1.0.0", path = "../nova-psm/program", features = ["no-entrypoint"]}
+rust_decimal = "1.37.1"
+solana-sdk = "2.1.0"
+spl-token = { version = "8.0", features = [ "no-entrypoint" ] }
+anchor-lang = "0.31.1"
